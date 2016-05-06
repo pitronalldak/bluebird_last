@@ -1,0 +1,121 @@
+html {
+    color: #11203d;
+    font-family: 'Lato', Helvetica Neue, Arial, sans-serif;
+    font-size: 62.5%;
+    line-height: 1.45;
+}
+
+body {
+    font-size: 1.6rem;
+    background-image: linear-gradient( to bottom, #fff, #fff 50%, #f9f9f9 50%, #f9f9f9 100%);
+    min-height: 100vh;
+    position: relative;
+}
+
+img,
+svg {
+    vertical-align: middle;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+header {
+    padding: 8rem 0;
+    text-align: center;
+}
+
+main {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.main-section {
+    border: 1px solid #ccc;
+    flex: 1 0 auto;
+    max-width: 40rem;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    background: white;
+    min-height: 500px;
+    position: relative;
+}
+
+.main-section h1 {
+    padding: 3.7rem;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.wrapper {
+    padding: 3.7rem;
+    text-align: center;
+}
+
+.about {
+    text-align: left;
+}
+
+.logo {
+    max-width: 24rem;
+    max-height: 5.7rem;
+}
+
+.contact-btn {
+    background-color: white;
+    border: 1px solid #e5e5e5;
+    text-decoration: none;
+    color: #0d182c;
+    padding: 1.7rem 3rem;
+    margin-top: 5rem;
+    display: inline-block;
+    border-radius: 12px;
+    transition: color .3s ease-in-out,
+                background-color .3s ease-in-out,
+                border-color .3s ease-in-out,
+                box-shadow .3s ease-in-out;
+    position: absolute;
+    left: 6rem;
+    right: 6rem;
+    bottom: 3.7rem;
+}
+
+.contact-btn:hover {
+    color: white;
+    background-color: #0d182c;
+    border-color: #0d182c;
+    box-shadow: 0 0 10px #888f9e;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 1rem;
+    color: #ccc;
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width: 992px) {
+    main {
+        flex-direction: column;
+    }
+
+    .main-section {
+        margin: 0 auto 5rem auto;
+    }
+}

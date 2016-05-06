@@ -1,0 +1,7 @@
+*.pyc
+.idea
+media/
+uwsgi/
+deploystatic/
+migrations/
+fadeev_local.py
